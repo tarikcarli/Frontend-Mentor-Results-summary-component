@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="w-full h-full" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="w-full h-full md:flex md:items-center">
+  <main class="w-full md:flex md:flex-row md:justify-center md:items-center md:max-w-[740px] md:m-auto shadow-xl rounded-[34px]">
+    <section class="w-full h-[355px] rounded-b-[30px] bg-gradient-to-b from-[#7857ff] to-[#2e2be9] md:h-[510px] md:rounded-t-[30px]">
+      <header class="w-full">
+        <h1 class="w-full text-center text-gray-200 font-[400] text-xl py-6 md:text-[24px] md:pt-10">
+          Your Result
+        </h1>
+      </header>
+      <div class="w-full h-[140px] md:h-[210px] md:pt-4">
+        <div class="w-[140px] md:w-[200px] h-full mx-auto text-center bg-gradient-to-b from-[#4e21ca] to-[#2421ca00] rounded-[50%]">
+          <div class="text-[56px] pt-[19px] text-white font-[800] md:text-[72px] md:pt-[36px]">
+            76
+          </div>
+          <div class="text-gray-400 -mt-[6px] md:text-[18px] md:-mt-[12px]">
+            of 100
+          </div>
+        </div>
+      </div>      
+      <div class="w-full text-center p-[25px] pb-0 text-2xl font-[700] text-gray-100 md:text-[32px] md:pt-10">
+        Great
+      </div>
+      <div class="w-full text-center p-[8px] px-[48px] text-base tracking-wide font-[500] text-gray-300 md:text-[18px] md:pt-6 md:px-[50px]">
+        You scored higher than 65% of the people who have taken these tests.
+      </div>
+    </section>
+    <section class="w-full md:h-[510px]">
+      <div class="w-full pt-7 pl-8 font-[700] text-xl md:pl-10 md:pt-10 md:text-[24px]">
+        Summary
+      </div>
+      <div class="w-full mt-[12px] md:mt-[24px]">
+        <div class="w-full py-2 px-8 md:px-10 md:py-[5px]">
+          <div class="flex flex-row items-center w-full h-15 pl-4 pt-[18px] pb-[18px] bg-[#ff575712] rounded-xl md:pl-6 ">
+            <img class="w-[20px] h-[20px]" src="./assets/images/icon-reaction.svg">
+            <div class="flex-1 pl-3 text-[#ff5757] font-[700] md:text-[18px]">Reaction</div>
+            <div class="pr-4 tracking-tighter text-gray-500 md:text-[18px]"><span class="font-[800] pr-2 text-black">80</span> / &nbsp 100</div>
+          </div>
+        </div>
+        
+        <div class="w-full py-2 px-8 md:px-10 md:py-[5px]">
+          <div class="flex flex-row items-center w-full h-15 pl-4 pt-[16px] pb-[20px] bg-[#ffb01f12] rounded-xl md:pl-6 ">
+            <img class="w-[20px] h-[20px]" src="./assets/images/icon-memory.svg">
+            <div class="flex-1 pl-3 text-[#ffb01f] font-[700] md:text-[18px]">Memory</div>
+            <div class="pr-4 tracking-tighter text-gray-500 md:text-[18px]"><span class="font-[800] pr-2 text-black">92</span> / &nbsp 100</div>
+          </div>
+        </div>
+  
+        <div class="w-full py-2 px-8 md:px-10 md:py-[5px]">
+          <div class="flex flex-row items-center w-full h-15 pl-4 pt-[16px] pb-[20px] bg-[#00bd9112] rounded-xl md:pl-6 ">
+            <img class="w-[20px] h-[20px]" src="./assets/images/icon-verbal.svg">
+            <div class="flex-1 pl-3 text-[#00bd91] font-[700] md:text-[18px]">Verbal</div>
+            <div class="pr-4 tracking-tighter text-gray-500 md:text-[18px]"><span class="font-[800] pr-2 text-black">61</span> / &nbsp 100</div>
+          </div>
+        </div>
+        
+        <div class="w-full py-2 px-8 md:px-10 md:py-[5px]">
+          <div class="flex flex-row items-center w-full h-15 pl-4 pt-[16px] pb-[20px] bg-[#1125d412] rounded-xl md:pl-6 ">
+            <img class="w-[20px] h-[20px]" src="./assets/images/icon-visual.svg">
+            <div class="flex-1 pl-3 text-[#1125d4] font-[700] md:text-[18px]">Visual</div>
+            <div class="pr-4 tracking-tighter text-gray-500 md:text-[18px]"><span class="font-[800] pr-2 text-black">72</span> / &nbsp 100</div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full py-2 px-8 md:px-10 md:mt-[16px]">
+        <button 
+          type="button" 
+          class="text-center text-xl text-gray-100 font-[500] w-full h-[58px] mt-[2px] pt-[16px] pb-[20px] bg-[#303b5a] rounded-[30px] md:h-[60px] active:bg-gradient-to-b active:from-[#7857ff] active:to-[#2e2be9]">
+          Continue
+        </button>
+      </div>
+    </section>
+    </main>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
